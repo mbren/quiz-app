@@ -1,0 +1,29 @@
+{   "short_desc": "Types of Reactions",
+    "question": "A reaction between an acid and a base is called a",
+    "hint": "We did a lab experiment about this",
+    "randomize": false,
+    "enumtype": "a",
+    "points": 1,
+    "answers": [
+    {
+      "id": 1,
+      "answer": "Neutralization reaction",
+      "correct": true
+    },
+    {
+      "id": 2,
+      "answer":"Salt reaction",
+      "correct": false
+    },
+    {
+      "id": 3,
+      "answer": "Hydroxide reaction",
+      "correct": false
+    },
+    {
+      "id": 4,
+      "answer": "Single replacement reaction",
+      "correct": false
+    }
+  ]
+}

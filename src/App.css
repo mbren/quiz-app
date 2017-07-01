@@ -1,0 +1,162 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body {
+height:100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(221,221,221);
+}
+
+body {
+  color: rgb(181,177,174);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+form label{
+    font-size: 12px;
+    font-weight: bold;
+    /*display:inline;*/
+    /*float:left;*/
+    /*margin-right:4px;*/
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: lightgrey;
+  color: grey;
+  border-radius: 5px;
+  font-weight: bold;
+  border:  none;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button:focus {
+  background: rgb(70,142,199);
+  color: white;
+}
+
+[type="checkbox"] {
+  float: left;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height:100%;
+  margin: 0 auto;
+
+}
+
+.edit-pane {
+  flex: 0 1 60%;
+  padding: 0 0 0 60px;
+  background: white;
+}
+
+.options_switcher {
+   background: white;
+   border: none;
+   padding: 0 20px;
+   display: inline-block;
+   float: right;
+   color: rgb(70,142,199);
+   font-size: 15px;
+   font-weight: bold;
+  }
+
+.options_switcher::after {
+  content: " ˅";
+  color: black;
+  font-weight: bold;
+  /*content: " ⌄";*/
+}
+
+.options_switcher--is-closed::after {
+  content: ' >';
+  color: black;
+  font-weight: bold;
+}
+
+.add_answer {
+   background: white;
+   border: none;
+   padding: 15px 0;
+   display: inline-block;
+   color: rgb(70,142,199);
+   font-size: 15px;
+   font-weight: bold;
+  }
+
+  .remove_answer {
+     background: white;
+     border: none;
+     padding: 0 15px;
+     display: inline-block;
+     /*color: grey;*/
+     font-size: 15px;
+     font-weight: bold;
+    }
+
+form {
+  float: clear;
+  margin-top: 40px;
+}
+
+input,textarea,select {
+  border: 1px solid grey;
+  font-size: 16px;
+  color: rgb(181,177,174);
+  padding: 0 15px;
+
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 500px;
+}
+
+input[type=radio] {
+border-radius    : 0.125em;
+}
+
+input[type=radio]:checked:before {
+  content     : '✓';
+  font-weight: bold;
+
+}
+  /*:required  {
+  color: black;
+  content: "*";
+  background: yellow;
+}*/
+
+.preview-pane {
+  flex: auto;
+  background: #fafafa;
+  padding: 0 30px 0 30px;
+}
+
+preview-pane > ul > ol {
+  list-style-type: lower-alpha;
+
+}
+
+.hint {
+  background: rgb(221,221,221);
+}
