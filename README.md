@@ -7,3 +7,6 @@ To run the app, type `npm start`.
 3. public/question.json
 
 Bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+![Screenshot](screenshot.png "Screenshot")
+
